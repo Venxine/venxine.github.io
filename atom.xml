@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>C:/Users/Venxine/Documents/Gridea/output</id>
+    <id>https://venxine.github.io</id>
     <title>Venxine</title>
-    <updated>2019-08-14T07:52:06.633Z</updated>
+    <updated>2019-08-14T08:07:33.060Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="C:/Users/Venxine/Documents/Gridea/output"/>
-    <link rel="self" href="C:/Users/Venxine/Documents/Gridea/output/atom.xml"/>
-    <subtitle>#人 #无 #在 #少 #年</subtitle>
-    <logo>C:/Users/Venxine/Documents/Gridea/output/images/avatar.png</logo>
-    <icon>C:/Users/Venxine/Documents/Gridea/output/favicon.ico</icon>
+    <link rel="alternate" href="https://venxine.github.io"/>
+    <link rel="self" href="https://venxine.github.io/atom.xml"/>
+    <logo>https://venxine.github.io/images/avatar.png</logo>
+    <icon>https://venxine.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Venxine</rights>
     <entry>
         <title type="html"><![CDATA[第一篇 20190814]]></title>
-        <id>C:/Users/Venxine/Documents/Gridea/output/post/di-yi-pian-20190814/index.html</id>
-        <link href="C:/Users/Venxine/Documents/Gridea/output/post/di-yi-pian-20190814/index.html">
+        <id>https://venxine.github.io/post/di-yi-pian-20190814</id>
+        <link href="https://venxine.github.io/post/di-yi-pian-20190814">
         </link>
         <updated>2019-08-14T07:34:54.000Z</updated>
     </entry>
