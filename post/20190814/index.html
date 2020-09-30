@@ -1,15 +1,18 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>第一篇 20190814 | Venxine</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://venxine.github.io/favicon.ico?v=1601429196752">
+<link rel="shortcut icon" href="https://venxine.github.io/favicon.ico?v=1601429515191">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://venxine.github.io/styles/main.css">
 
@@ -24,88 +27,85 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 
 
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://venxine.github.io">
-        <img src="https://venxine.github.io/images/avatar.png?v=1601429196752" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://venxine.github.io">
+        <img class="avatar" src="https://venxine.github.io/images/avatar.png?v=1601429515191" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://venxine.github.io">
         <h1 class="site-title">Venxine</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="site-nav">
+          <a href="/archives" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="site-nav">
+          <a href="/post/about" class="menu purple-link">
             关于
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      
-    </div>
-    <div class="site-footer">
-      © 2019 Venxine.  All rights reserved. | <a class="rss" href="https://venxine.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">第一篇 20190814</h2>
-            <div class="post-date">2019-08-14</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://venxine.github.io/post-images/20190814.JPG')">
+            </div>
+          
+          <h2 class="post-title">第一篇 20190814</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-08-14</span>
             
-              <div class="feature-container" style="background-image: url('https://venxine.github.io/post-images/20190814.JPG')">
-              </div>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://venxine.github.io/tag/XtY6CBNYE">
+                    Diary
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content">
-              <p>第一篇来的太晚了，有想办个人博客的想法很久了，这个想法从2008年高考完后的那个暑假在Google Sites上面自己瞎玩的时候就开始了，后来写字的地方辗转各个平台，留下的文字零零散散；域名自己也买过两次，始终没有搞个Wordpress搭个站起来。</p>
+          </div>
+          <div class="post-content">
+            <p>第一篇来的太晚了，有想办个人博客的想法很久了，这个想法从2008年高考完后的那个暑假在Google Sites上面自己瞎玩的时候就开始了，后来写字的地方辗转各个平台，留下的文字零零散散；域名自己也买过两次，始终没有搞个Wordpress搭个站起来。</p>
 <p>下面这段话也是2012年6月29日写在LOFTER上的第一篇文章。</p>
 <blockquote>
 <p>我最喜欢写字的平台是当年玩的Google Sites。相当于在完全一片空白的网页上自己搭个网站出来，模板，图标，链接，文字，图片都得自己做。后来整个Sites就被墙了。当时偶然浏览到一个新加坡男孩做的Site，整个网页上只有1到18十八个数字，每个数字点进去都是一篇日记，是送给他女朋友十八岁生日的礼物。</p>
@@ -113,37 +113,41 @@
 <p>上周在研究在Google Cloud Platform上面搭建服务器以实现真正的上网需求，然后跟朋友提了一下说要搭建个个人博客平台，</p>
 <p>现在发现文字似乎比搭建这些框架性的东西都要重要一些，</p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://venxine.github.io/tag/XtY6CBNYE" class="tag">
-                    Diary
-                  </a>
-                
-              </div>
-            
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
           </div>
-
         </div>
+
+        
       </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  © 2019 Venxine.  All rights reserved. | <a class="rss" href="https://venxine.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
